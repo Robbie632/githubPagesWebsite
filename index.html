@@ -45,6 +45,9 @@
               <button id="button-1" style="background-color: #E58945;"
                 class='block text-black-100 font-bold py-2 px-4 rounded-xl focus:outline-none focus:shadow-outline cursor-pointer'
                 type="submit">More about me <span>→</span></button>
+                <button id="button-1b" style="background-color: #E58945;"
+                class='mt-2 block text-white font-bold py-2 px-4 rounded-xl focus:outline-none focus:shadow-outline cursor-pointer'
+                type="submit">More about me <span>→</span></button>
             </div>
 
           </div>
@@ -68,6 +71,9 @@
           <div class="text-black-200 font-semibold text-lg">
             <button id="button-2" style="background-color: #E58945;"
               class='block text-black-100 font-bold py-2 px-4 rounded-xl focus:outline-none focus:shadow-outline cursor-pointer'
+              type="submit">Find out more <span>→</span></button>
+              <button id="button-2b" style="background-color: #E58945;"
+              class='mt-2 block text-white font-bold py-2 px-4 rounded-xl focus:outline-none focus:shadow-outline cursor-pointer'
               type="submit">Find out more <span>→</span></button>
           </div>
           <div>
@@ -97,7 +103,9 @@
 
   const containerElement = document.getElementById("container");
   const buttonElement = document.getElementById("button-1");
+  const buttonElementb = document.getElementById("button-1b");
   const buttonElement2 = document.getElementById("button-2");
+  const buttonElement2b = document.getElementById("button-2b");
   const cardElement = document.getElementById("card");
 
   color1.addEventListener("input", () => {
@@ -107,7 +115,9 @@
   color2.addEventListener("input", () => {
     const color = color2.value;
     buttonElement.style.backgroundColor = color;
+    buttonElementb.style.backgroundColor = color;
     buttonElement2.style.backgroundColor = color;
+    buttonElement2b.style.backgroundColor = color;
   });
   color3.addEventListener("input", () => {
     const color = color3.value;
