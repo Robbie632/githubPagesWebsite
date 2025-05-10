@@ -3,25 +3,30 @@
 
 <head>
   <title>Color Changer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
 <body>
   <h1 class="text-4xl text-center sm:text-5xl font-bold text-gray-900 mb-10 mt-10">
-    Palette Tester<span style='font-size:0.8em'>&#x1F58C;</span>
+    Palette Tester
   </h1>
-  <div style="display: flex; flex-direction:column; align-items:center; width:100%; gap:20px; margin-bottom:20px">
-    <div>
-      <div>
-        <input style="cursor:pointer; height:100px; width:300px" type="color" id="color1" placeholder="hexcode"
-          value="#FFEEE3" />
-        <input style="cursor:pointer; height:100px; width:300px" type="color" id="color2" placeholder="hexcode"
-          value="#E58945" />
-        <input style="cursor:pointer; height:100px; width:300px" type="color" id="color3" placeholder="hexcode"
-          value="#E5E7EB" />
-      </div>
+  <div class="w-9/10 m-auto">
+    <h2 class="text-2xl sm:text-3xl font-bold text-gray-900 mb-0">
+      Select Colors <span style='font-size:0.8em'>&#x1F58C;</span>
+    </h2>
+    <div class="flex flex-row items-center gap-2 sm:gap-5 mb-10">
+  
+          <input class="flex-1 h-20" style="cursor:pointer" type="color" id="color1" placeholder="hexcode"
+            value="#FFEEE3" />
+          <input class="flex-1 h-20" style="cursor:pointer" type="color" id="color2" placeholder="hexcode"
+            value="#E58945" />
+          <input class="flex-1 h-20" style="cursor:pointer" type="color" id="color3" placeholder="hexcode"
+            value="#E5E7EB" />
+      
     </div>
   </div>
+
   <div id="container" style='background-color:#FFEEE3'>
     <div class="w-9/10 m-auto">
       <div class="flex flex-col justify-center">
